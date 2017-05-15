@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,10 +31,14 @@ public class MainActivity extends AppCompatActivity {
         if(isInserted) {
             Log.d("MyContact", "Success inserting data");
             //Insert toast here...
+            Toast toast = Toast.makeText(getApplicationContext(), "Success inserting data", Toast.LENGTH_SHORT);
+            toast.show();
         }
         else {
             Log.d("MyContact", "Failure inserting data");
             //Insert toast here...
+            Toast toast = Toast.makeText(getApplicationContext(), "Failure inserting data", Toast.LENGTH_SHORT);
+            toast.show();
         }
 
     }
