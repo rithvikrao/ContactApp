@@ -26,7 +26,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COL_4 = "PHONENUMBER";
 
     public DatabaseHelper(Context context) {
-        super(context, DATABASE_NAME, null, 2);
+        super(context, DATABASE_NAME, null, 5);
     }
 
     @Override
@@ -42,7 +42,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public boolean insertData(String name, String age, String phonenumber) {
         Log.d("MyContact", name);
-        Log.d("MyContact", age);
+        Log.d("MyContact", age) ;
         Log.d("MyContact", phonenumber);
 
         SQLiteDatabase db = this.getWritableDatabase();
