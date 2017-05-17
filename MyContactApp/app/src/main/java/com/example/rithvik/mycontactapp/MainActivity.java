@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
         while(res.moveToNext()) {
             for(int i=1; i<res.getColumnCount(); i++) {
-                buffer.append(res.getColumnName(i) + ": " + res.getString(i) + "\n");
+                buffer.append(multiField[i]+ res.getString(i) + "\n");
             }
             buffer.append("\n");
         }
