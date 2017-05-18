@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyContactApp</string>
+    <string name="title_activity_search">Search</string>
+    <string name="textview">TextView</string>
 </resources>
